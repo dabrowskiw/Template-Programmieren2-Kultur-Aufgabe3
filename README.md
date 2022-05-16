@@ -40,7 +40,7 @@ Erstellen Sie zunächst in dem neuen package ```org.htw.prog2.aufgabe1.readers``
     * ```public LinkedList<String> getOrganisms()```: Gibt die gespeicherten Organismennamen zurück
     * ```public void addMutation(Mutation variant)```: Fügt zur Liste der gespeicherten Mutationen eine neue Mutation hinzu
     * ```public LinkedList<Mutation> getMutations()```: Gibt die gespeicherten Mutationen zurück
-    * ```public int getNumberOfMutations()```: Gibt die Liste der gespeicherten Mutationen zurück
+    * ```public int getNumberOfMutations()```: Gibt die Anzahl der gespeicherten Mutationen zurück
     
 Es ergibt sich das folgende Vererbungsschema zwischen den Dateien:
 
