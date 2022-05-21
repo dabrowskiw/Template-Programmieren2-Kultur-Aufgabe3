@@ -3,10 +3,10 @@ plugins {
     id 'application'
 }
 
-mainClassName = 'org.htw.prog2.aufgabe1.HIVDiagnostics'
+mainClassName = 'org.htw.prog2.aufgabe1.SiteClassification'
 
 run {
-    args '-m data/HIVMutationPatternsPI.csv -d ProteaseInhibitor -r data/protease_reference.fasta -p data/protease_sequences.fasta'.split(" ")
+    args '-m data/GREB1_patterns.csv -r data/GREB1_reference.fasta -p data/site_sequences.fasta'.split(" ")
 }
 
 group 'org.htw.prog2'
