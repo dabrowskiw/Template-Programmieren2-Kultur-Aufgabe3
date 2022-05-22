@@ -5,6 +5,10 @@ plugins {
 
 mainClassName = 'org.htw.prog2.aufgabe1.SiteClassification'
 
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
 run {
     args '-m data/GREB1_patterns.csv -r data/GREB1_reference.fasta -p data/site_sequences.fasta'.split(" ")
 }
