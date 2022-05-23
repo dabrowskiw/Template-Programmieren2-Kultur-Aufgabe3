@@ -48,9 +48,9 @@ class SiteClassificationTest {
     @Test
     void main() {
         SiteClassification.main("-m data/GREB1_patterns.csv -p data/site_sequences.fasta -r data/GREB1_reference.fasta".split(" "));
-        assertEquals("Eingelesene Mutationen: 4\n" +
-                "Länge der eingelesenen Referenzsequenz: 1949 Aminosäuren\n" +
-                "Anzahl der eingelesenen Proteinsequenzen: 379", outContent.toString().strip());
+        assertEquals(new String[] {"Eingelesene Mutationen: 4",
+                "Länge der eingelesenen Referenzsequenz: 1949 Aminosäuren",
+                "Anzahl der eingelesenen Proteinsequenzen: 382"}, outContent.toString().strip().replace("\\r", "").split("\\n"));
     }
 
 }
